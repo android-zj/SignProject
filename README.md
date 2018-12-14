@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
             // lineStyle  显示的横线款式,0：都有线条，1左边无线条，2右边无线条；
             // colorStyle 显示的颜色款式,0：都是红色，1左红右灰，2都是灰色,3线左红右灰，圈是红色的
           if (i>0 && i < 6) {//i比sign小1
-                mSignViews.get(i).setTextTopAndBottom(textTop, textBottom, 0, 0);//textTop文字宽度(已写死)  textBottom底部文字
+                mSignViews.get(i).setTextTopAndBottom(textTop, textBottom, 0, 0);//textTop文字宽度  textBottom底部文字
             } else if (i == 6) {
                 mSignViews.get(i).setTextTopAndBottom(textTop, textBottom, 2, 0);
             }else if(i==0){
