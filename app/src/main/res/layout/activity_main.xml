@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="2dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="4dp"
+            android:background="#979797" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/view_line"
+            android:text="每日签到"
+            android:textColor="#151515"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_goon_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_line"
+            android:layout_marginTop="8dp"
+            android:drawableEnd="@mipmap/ic_sign_help"
+            android:drawablePadding="4dp"
+            android:text="您再连续签到3天即可获得20元优惠券"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/group_item_name"
+            android:padding="4dp"
+            android:text="今日未签到"
+            android:textColor="@color/red"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_goon_sign">
+
+            <com.android.library.SignView
+                android:id="@+id/sv_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.android.library.SignView
+                android:id="@+id/sv_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.android.library.SignView
+                android:id="@+id/sv_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.android.library.SignView
+                android:id="@+id/sv_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.android.library.SignView
+                android:id="@+id/sv_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.android.library.SignView
+                android:id="@+id/sv_6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.android.library.SignView
+                android:id="@+id/sv_7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
